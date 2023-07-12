@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "erins-portfolio"
+version = "0.1.0"
+description = ""
+authors = ["erinhmclark <erinhannahmary.clark@gmail.com>"]
+readme = "README.md"
+packages = [{include = "erins_portfolio"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+django = "^4.2.3"
+django-crispy-forms = "^2.0"
+crispy-bootstrap5 = "^0.7"
+pillow = "^10.0.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
