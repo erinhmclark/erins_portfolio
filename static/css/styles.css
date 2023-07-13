@@ -1,0 +1,77 @@
+:root {
+    --primary-color: black;
+    --secondary-color: salmon;
+    --tertiary-color: grey;
+    --quaternary-color: darksalmon;
+    --quinary-color: gray;
+}
+body {
+    font-family: monospace;
+    color: #ffffff;
+    background-color: #282828;
+    padding-top: 80px;
+}
+
+.navbar {
+    transition: all 0.5s;
+}
+
+.navbar a {
+    color: #ffffff;
+}
+
+.nav-link {
+    margin-right: 1em;
+}
+
+.nav-link:hover {
+    color: #cccccc;
+}
+
+section {
+    padding: 3em 1em;
+}
+
+#home {
+    /*background: url('{{ static "images/home_image.jpg" }}') no-repeat center center fixed;*/
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+projects {
+    background-color: #333333;
+}
+
+.project-card {
+    margin: 1em;
+    background-color: #555555;
+}
+
+
+.footer {
+
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--quinary-color);
+    color: var(--secondary-color);
+    text-align: center;
+    padding: 10px 0;
+}
+
+.social-links a {
+    /*position: fixed;*/
+    /*left: 0;*/
+    /*bottom: 0;*/
+    /*width: 100%;*/
+    text-align: center;
+    margin: 0 10px;
+    color: var(--secondary-color);
+}
+
+.social-links a:hover {
+    color: var(--tertiary-color);
+}
