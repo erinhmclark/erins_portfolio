@@ -1,6 +1,6 @@
 :root {
     --primary-color: black;
-    --secondary-color: salmon;
+    --secondary-color: darksalmon;
     --tertiary-color: grey;
     --quaternary-color: darksalmon;
     --quinary-color: gray;
@@ -13,11 +13,16 @@ body {
 }
 
 .navbar {
+    color: #ffffff;
     transition: all 0.5s;
 }
 
 .navbar a {
     color: #ffffff;
+}
+
+.navbar-brand {
+    padding-left: 20px;
 }
 
 .nav-link {
