@@ -1,9 +1,8 @@
 :root {
     --primary-color: black;
-    --secondary-color: darksalmon;
+    --secondary-color: #ffffff;
     --tertiary-color: grey;
-    --quaternary-color: darksalmon;
-    --quinary-color: gray;
+    --quaternary-color: #282828;
 }
 body {
     font-family: monospace;
@@ -30,14 +29,14 @@ body {
 }
 
 .nav-link:hover {
-    color: #cccccc;
+    color: var(--tertiary-color);
 }
 
 section {
     padding: 3em 1em;
 }
 
-#home {
+home {
     /*background: url('{{ static "images/home_image.jpg" }}') no-repeat center center fixed;*/
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -54,24 +53,11 @@ projects {
     background-color: #555555;
 }
 
-
-.footer {
-
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: var(--quinary-color);
-    color: var(--secondary-color);
-    text-align: center;
-    padding: 10px 0;
+.social-links {
+    padding-right: 20pt;
 }
 
 .social-links a {
-    /*position: fixed;*/
-    /*left: 0;*/
-    /*bottom: 0;*/
-    /*width: 100%;*/
     text-align: center;
     margin: 0 10px;
     color: var(--secondary-color);
