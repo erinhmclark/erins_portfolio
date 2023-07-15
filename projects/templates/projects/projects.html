@@ -4,4 +4,10 @@ Projects
 {% endblock %}
 {% block content %}
 <h1>Projects will go here.</h1>
+{% for project in projects %}
+    <div class="content">
+        <h3><a href="{{project.id}}">{{project.title}}</a> </h3>
+        <p>{{project.summary}}</p>
+    </div>
+{% endfor %}
 {% endblock %}
