@@ -1,23 +1,23 @@
 :root {
-    --primary-color: black;
-    --secondary-color: #ffffff;
-    --tertiary-color: grey;
-    --quaternary-color: #282828;
+    --primary-color: red;
+    --secondary-color: white;
+    --tertiary-color: #8b3d3d;
+    --quaternary-color: green;
 }
 body {
     font-family: monospace, Optima;
-    color: #ffffff;
-    background-color: #282828;
+    color: var(--secondary-color);
+    background-color: var(--tertiary-color);
     padding-top: 80px;
 }
 
 .navbar {
-    color: #ffffff;
+    color: var(--secondary-color);
     transition: all 0.5s;
 }
 
 .navbar a {
-    color: #ffffff;
+    color: var(--secondary-color);
 }
 
 .navbar-brand {
@@ -45,12 +45,12 @@ home {
 }
 
 projects {
-    background-color: #333333;
+    background-color: #4fc2ad;
 }
 
 .project-card {
     margin: 1em;
-    background-color: #555555;
+    background-color: var(--secondary-color);
 }
 
 .social-links {
@@ -65,4 +65,19 @@ projects {
 
 .social-links a:hover {
     color: var(--tertiary-color);
+}
+
+/* Add to the existing styles.css */
+
+.project-card {
+    transition: transform .3s ease-out;
+}
+
+.project-card:hover {
+    transform: scale(0.90);
+    box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.3);
+}
+
+.badge {
+    margin-right: .2rem;
 }
